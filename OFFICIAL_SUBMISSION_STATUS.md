@@ -13,6 +13,7 @@ This file records external submission / contribution status for the public Slai 
 
 - Public Harbor jobs: https://hub.harborframework.com/users/huong8373tt-beep/jobs
 - Public-facing coverage label: **TB4 63/66 K5 tasks**.
+- Scope note: `benchmarks/terminal-bench/TB4-0/` preserves a 60-row local manifest snapshot; that snapshot's 59/60 audit is not the public-facing TB4 coverage total.
 - Repository archive path: `benchmarks/terminal-bench/TB4-0/`
 - The repository preserves a sanitized evidence package plus public Harbor links. Official leaderboard inclusion/status is not treated as completed by this archive.
 - Continuation is temporarily paused due to H100 hardware constraints and unclear official acceptance policy for third-party/proxy testing.
