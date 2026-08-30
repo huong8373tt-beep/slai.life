@@ -1,0 +1,16 @@
+{
+  "accepted_task_count": 60,
+  "accepted_trial_count": 300,
+  "hub_url_count": 60,
+  "manifest_public_visibility_count": 59,
+  "public_upload_log_evidence_count": 0,
+  "public_evidence_url_count": 59,
+  "manifest_visibility_gaps": [
+    {
+      "task": "live-database-cutover",
+      "hub_visibility": null,
+      "hub_job_url": "https://hub.harborframework.com/jobs/e7da3950-cd92-406e-94e3-c075016af275"
+    }
+  ],
+  "public_evidence_rule": "A job URL is counted as public if manifest hub_visibility is public or a local Harbor upload log for that URL records visibility: public."
+}
