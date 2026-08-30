@@ -1,10 +1,18 @@
 {
-  "accepted_task_count": 60,
-  "accepted_trial_count": 300,
-  "hub_url_count": 60,
-  "manifest_public_visibility_count": 59,
-  "public_upload_log_evidence_count": 0,
-  "public_evidence_url_count": 59,
+  "scope": "local_60_row_manifest_snapshot_only",
+  "not_public_headline": true,
+  "public_facing_coverage_label": "TB4 63/66 K5 tasks",
+  "public_facing_coverage_task_count": 63,
+  "tb4_total_task_count": 66,
+  "primary_public_evidence_url": "https://hub.harborframework.com/users/huong8373tt-beep/jobs",
+  "local_manifest_snapshot": {
+    "accepted_task_count": 60,
+    "accepted_trial_count": 300,
+    "hub_url_count": 60,
+    "manifest_public_visibility_count": 59,
+    "public_upload_log_evidence_count": 0,
+    "public_evidence_url_count": 59
+  },
   "manifest_visibility_gaps": [
     {
       "task": "live-database-cutover",
@@ -12,5 +20,8 @@
       "hub_job_url": "https://hub.harborframework.com/jobs/e7da3950-cd92-406e-94e3-c075016af275"
     }
   ],
-  "public_evidence_rule": "A job URL is counted as public if manifest hub_visibility is public or a local Harbor upload log for that URL records visibility: public."
+  "public_evidence_rule": "A job URL is counted as public in the local snapshot if manifest hub_visibility is public or a local Harbor upload log for that URL records visibility: public.",
+  "correction_note": "The historical 59/60 count is only a conservative audit of one 60-row local manifest snapshot. It is not the TB4 public-facing coverage headline. Harbor Hub is paginated and contains more than sixty public Slai K5 job uploads; the archive headline is TB4 63/66 K5 tasks.",
+  "updated_by": "Slai",
+  "updated_at_local": "2026-08-31T00:33:47"
 }
