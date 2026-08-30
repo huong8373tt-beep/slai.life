@@ -11,6 +11,7 @@ This repository is a public showcase and reproducibility archive for Slai-Agent 
 ### Terminal-Bench
 
 - **TB4 public Harbor coverage:** **63/66 K5 tasks** are preserved through public Harbor job records.
+- **Scope note:** `benchmarks/terminal-bench/TB4-0/` also retains an older 60-row local manifest snapshot; its conservative 59/60 visibility audit is not the TB4 headline.
 - **Hub evidence:** https://hub.harborframework.com/users/huong8373tt-beep/jobs
 - **TB2.1 official PR:** https://github.com/harbor-framework/terminal-bench-2-1/pull/217
 - **Archive paths:**
