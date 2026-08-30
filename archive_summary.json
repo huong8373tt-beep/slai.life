@@ -1,11 +1,25 @@
 {
   "output": "D:\\slai_life_github_archive_work",
+  "maintainer": "Slai",
+  "developer_direction": true,
+  "public_repository": "https://github.com/huong8373tt-beep/slai.life",
   "tb21_files": 12,
   "tb21_audit": "D:\\slai_life_github_archive_work\\benchmarks\\terminal-bench\\TB2.1\\official-submission\\final_public_audit.json",
   "tb4_archive_label": "TB4-0",
-  "tb4_current_accepted_task_count": 60,
-  "tb4_current_accepted_trial_count": 300,
-  "tb4_current_hub_url_count": 60,
-  "tb4_current_public_evidence_url_count": 59,
-  "files_in_archive_before_summary": 23
+  "tb4_public_label": "TB4 63/66 K5 public Harbor coverage",
+  "tb4_primary_evidence_url": "https://hub.harborframework.com/users/huong8373tt-beep/jobs",
+  "tb4_current_repo_manifest_task_count": 60,
+  "tb4_public_coverage_task_count": 63,
+  "tb4_total_task_count": 66,
+  "tb4_status": "paused: H100 hardware constraints and unresolved third-party/proxy testing guidance",
+  "swe_bench_live_prs": {
+    "submission": [
+      28,
+      29,
+      30,
+      31
+    ],
+    "upstream_evaluator_fix": 54,
+    "pr54_url": "https://github.com/microsoft/SWE-bench-Live/pull/54"
+  }
 }
