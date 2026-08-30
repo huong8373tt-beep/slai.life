@@ -21,5 +21,8 @@
     ],
     "upstream_evaluator_fix": 54,
     "pr54_url": "https://github.com/microsoft/SWE-bench-Live/pull/54"
-  }
+  },
+  "tb4_local_manifest_snapshot_task_count": 60,
+  "tb4_manifest_snapshot_public_visibility_count": 59,
+  "tb4_scope_note": "The 60-row manifest and 59/60 visibility audit are local snapshot counts only; the public-facing TB4 headline is 63/66 K5 tasks, with Harbor Hub as primary evidence."
 }
