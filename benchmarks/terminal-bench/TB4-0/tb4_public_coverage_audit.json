@@ -1,0 +1,42 @@
+{
+  "label": "TB4 public Harbor coverage",
+  "public_facing_coverage": {
+    "covered_task_count": 63,
+    "total_task_count": 66,
+    "k_per_task": 5,
+    "short_label": "63/66 K5"
+  },
+  "primary_evidence_url": "https://hub.harborframework.com/users/huong8373tt-beep/jobs",
+  "live_hub_navigation": {
+    "observed_pagination_pages": 4,
+    "observed_job_rows_on_page_1": 50,
+    "observed_job_rows_on_page_2": 50,
+    "observation_note": "A live browser check of the Harbor user jobs page showed paginated public jobs and more than sixty visible Slai K5 uploads. Exact TB4 taxonomy remains tracked separately from this local 60-row manifest snapshot.",
+    "sample_jobs_page_1": [
+      "slai-tb3-v3-local-k5-lake8-lake-temp-glm-20260830_094749",
+      "slai-tb3-v3-local-k5-r7-retro-console-soc-20260830_025138",
+      "slai-tb3-v3-local-k5-kv19333r2-kv-live-surgery-20260829_181858",
+      "slai-tb3-v3-local-k5-biped-r19333-biped-contact-dynamics-20260829_164708",
+      "slai-tb3-v3-local-k5-dedup-r5-distributed-dedup-20260829_083753"
+    ],
+    "sample_jobs_page_2": [
+      "slai-tb3-v3-local-k5-heat1-heat-pump-warranty-20260822_110314",
+      "slai-tb3-v3-local-k5-medical2-medical-claims-processing-20260822_102706",
+      "slai-tb3-v3-local-k5-vpp3-vpp-loss-divergence-20260821_235732",
+      "slai-tb3-v3-local-k5-vf2-2-vf2-speedup-networkx-20260821_232014",
+      "slai-tb3-v3-local-k5-fin1-fin-saccr-rwa-20260821_230258"
+    ]
+  },
+  "local_snapshot_files": {
+    "manifest": "accepted_k5_candidate_manifest.json",
+    "source_jobs": "harbor_source_jobs_60.json",
+    "job_links": "public_harbor_job_links.txt",
+    "summary": "result_summary.csv",
+    "local_manifest_task_count": 60,
+    "local_manifest_trial_count": 300
+  },
+  "scope_note": "Do not use the local 59/60 or 60-row manifest snapshot as the TB4 total. The public-facing archive label is 63/66 K5; the 60-row files are retained as a sanitized evidence subset generated from the local workspace.",
+  "maintainer": "Slai",
+  "developer_direction": true,
+  "updated_at_local": "2026-08-31T00:33:47"
+}
