@@ -28,6 +28,13 @@ Why it matters:
 - Slai-Agent Runtime identified this mismatch during evaluation and submitted the upstream correction.
 - After the fix, the same final patches from PR #29 aggregated to 36/36 in PR #31 because 13 prior report-level false negatives were pytest `XFAIL` outcomes.
 
+
+## Evidence files in this directory
+
+- [`OFFICIAL_MERGED_PR_EVIDENCE.md`](OFFICIAL_MERGED_PR_EVIDENCE.md) — compact public evidence table for merged PRs #28, #29, #30, #31, and microsoft/SWE-bench-Live#54.
+- [`official_merged_pr_evidence.json`](official_merged_pr_evidence.json) — machine-readable metadata fetched from GitHub Pulls API.
+- [`PR54_XFAIL_EVALUATOR_FIX.md`](PR54_XFAIL_EVALUATOR_FIX.md) — separate write-up for the upstream pytest `XFAIL` evaluator semantics fix.
+
 ## Status notes
 
 - These records are public, merged contributions and reproducibility evidence.
