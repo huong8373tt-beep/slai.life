@@ -8,7 +8,8 @@ Owner-facing archive label: `TB4-0`
 
 ## Headline
 
-- **TB4 coverage preserved here:** **63/66 K5 tasks**
+- **TB4 coverage preserved here:** **63/66 tasks with complete K=5 results**
+- **Result within the covered set:** **63/63 tasks are 5/5 successful (100%)**
 - **Primary live evidence:** https://hub.harborframework.com/users/huong8373tt-beep/jobs
 - Further TB4 continuation is temporarily paused because of H100 hardware constraints and unresolved official guidance on whether third-party/proxy execution should be accepted.
 

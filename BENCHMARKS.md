@@ -7,6 +7,7 @@ This page indexes public Slai Agent Runtime benchmark and run evidence. It disti
 - Public profile: <https://hub.harborframework.com/users/huong8373tt-beep/jobs>
 - Published records: **155 jobs**
 - Coverage includes Terminal-Bench 2.1 and later Terminal-Bench task runs.
+- Later-task public coverage: **63/66 tasks with complete K=5 results; every covered task is 5/5 successful (100% within the documented 63-task coverage).** The remaining three tasks are not included in that record.
 
 Harbor records provide task-level evidence such as job identity, run timing, trials, and reported execution status. Different benchmark versions, task subsets, models, and runtime conditions have different scopes and should not be combined into one leaderboard claim.
 
@@ -15,6 +16,7 @@ Harbor records provide task-level evidence such as job identity, run timing, tri
 - Public submission: [harbor-framework/terminal-bench-2-1#217](https://github.com/harbor-framework/terminal-bench-2-1/pull/217)
 - Submitted configuration: GPT-5.5 xhigh + Slai Agent Runtime
 - Submitted material: 89 tasks × at least K=5, for 445 trials
+- Submitted archive result: **100.00% accuracy (445/445 successful trials)**
 - Reported infrastructure errors: 0
 - Automated static checks: 10/10 passed
 

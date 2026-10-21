@@ -78,8 +78,8 @@ They cover Windows paths and filesystem behavior, PowerShell and shell differenc
 
 ## Public benchmark and run records
 
-- **[Harbor Hub public job records](https://hub.harborframework.com/users/huong8373tt-beep/jobs):** 155 published jobs, including Terminal-Bench 2.1 and later Terminal-Bench task runs.
-- **[Terminal-Bench 2.1 #217](https://github.com/harbor-framework/terminal-bench-2-1/pull/217):** a public submission for GPT-5.5 xhigh + Slai Agent Runtime. Its materials cover 89 tasks × at least 5 trials (445 trials), report zero infrastructure errors, and passed 10/10 automated static checks. The PR received an approval and was later closed; the public timeline does not show a `/judge` result.
+- **[Harbor Hub public job records](https://hub.harborframework.com/users/huong8373tt-beep/jobs):** 155 published jobs, including Terminal-Bench 2.1 and later Terminal-Bench task runs. The later-task archive includes complete K=5 results for **63 of 66 tasks**; each published covered task is a **5/5 successful run (100% within the documented 63-task coverage)**. The remaining three tasks are not included in that record.
+- **[Terminal-Bench 2.1 #217](https://github.com/harbor-framework/terminal-bench-2-1/pull/217):** a public submission for GPT-5.5 xhigh + Slai Agent Runtime. Its submitted archive reports **100.00% accuracy** across 89 tasks × at least 5 trials: **445/445 successful trials**, zero reported infrastructure errors, and 10/10 automated static checks passed. The PR received an approval and was later closed; the public timeline does not show a `/judge` result.
 - **SWE-bench-Live:** merged public submission packages and the upstream evaluator correction are indexed in [BENCHMARKS.md](BENCHMARKS.md).
 
 The Terminal-Bench #217 record is kept as a public submission and execution trail. It is not presented as an official leaderboard placement; official leaderboard inclusion is decided by the benchmark maintainers.
