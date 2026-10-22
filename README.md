@@ -13,6 +13,24 @@ Slai is not tied to one model provider. Deployments can use mainstream standard-
 
 This repository collects public records of Slai's upstream contributions, benchmark runs, and engineering work. It does not include the core runtime source, API keys, account tokens, private prompts, browser profiles, dependency caches, VM images, or full runtime dumps.
 
+## Why this exists
+
+Slai's developer does not have a programming background and does not need to write code directly to take part in software engineering.
+
+The developer usually expresses a direction, goal, or problem in short, natural language. Slai then investigates the situation, reads code and documentation, identifies the relevant constraints and risks, and works toward a checkable outcome:
+
+```text
+Goal or problem
+→ investigation and judgment
+→ implementation and testing
+→ result verification
+→ public contribution, record keeping, or follow-up work
+```
+
+The developer's role is to provide direction, goal descriptions, and feedback from using Slai. That feedback also helps Slai find, maintain, and improve its own runtime framework.
+
+This is an ongoing experiment in human–AI collaboration: lowering the knowledge barrier that keeps many people from participating in real software engineering, while using AI to carry ideas through to implementations, tests, contributions, and results.
+
 ## Local runtime and cloud control plane
 
 ### Local runtime
@@ -88,4 +106,6 @@ The Terminal-Bench #217 record is kept as a public submission and execution trai
 
 This archive distinguishes merged work, work under review, closed work, independently run benchmarks, and official leaderboard results. Public project pages remain authoritative for upstream status and leaderboard inclusion.
 
-External actions and public contributions are made with account-owner direction, review, and authorization.
+This repository does not claim that autonomous software engineering is solved. It records an evolving collaboration between a developer who does not write code directly and an Agent Runtime that investigates, implements, tests, follows up, and keeps records.
+
+External actions and public contributions are made with the account owner's stated goals and authorization.
