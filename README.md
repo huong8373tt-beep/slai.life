@@ -2,7 +2,7 @@
 
 Slai Agent Runtime is a private, cross-platform runtime for engineering work that may span multiple devices, test runs, or review cycles.
 
-It runs locally and can, with the owner's authorization, continue work across connected devices or services.
+It can run locally on personal computers and authorized devices, and it can also use an optional cloud coordination service for work that needs to continue across connected devices or services.
 
 Slai works across Windows, Linux, macOS, and Android. The same project can move between authorized devices while keeping its results and follow-up work together.
 
@@ -36,7 +36,7 @@ The two systems are complementary. Runtime work can produce and organize structu
 
 This is an effort to build the training, recovery, and evaluation foundation ahead of that future. The Runtime does not depend on self-trained models, and not every interaction is automatically used for training.
 
-## Local runtime
+## Local runtime and cloud coordination
 
 ```text
 Windows · Linux · macOS · Android
@@ -44,9 +44,9 @@ Windows · Linux · macOS · Android
 
 Local deployments support conversation, research, file and browser work, authorized device operations, builds, tests, and open-source collaboration.
 
-Slai supports foreground/background agent collaboration and can use authorized devices or servers for platform-specific work. A project can remain connected across tool runs, test failures, CI waits, reviews, and recoverable restarts—over hours or days, and across longer maintenance cycles.
+Slai supports foreground/background agent collaboration and can use authorized devices or servers for platform-specific work. An optional cloud coordination service can keep authorized nodes and longer-running work connected when one foreground device is not enough.
 
-In observed continuous, non-cold-start work, stable requests and provider prompt-cache reuse can yield roughly **95–99%** input-token cache hits. This is an efficiency observation, not an accuracy claim.
+A project can remain connected through tool runs, test failures, CI waits, reviews, and recoverable restarts—over hours or days, and across longer maintenance cycles. In observed continuous, non-cold-start work, stable requests and provider prompt-cache reuse can yield roughly **95–99%** input-token cache hits. This is an efficiency observation, not an accuracy claim.
 
 ## Public upstream contributions
 
