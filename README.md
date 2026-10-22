@@ -51,6 +51,27 @@ Windows · Linux · macOS · Android
 
 Local deployments support day-to-day interaction, source investigation, file and browser work, desktop or device operations, builds, tests, evaluations, and open-source collaboration.
 
+### Native multi-agent and authorized-node coordination
+
+The local runtime includes native coordination between its foreground and background agent roles. A task is not limited to one chat process or one machine: it can hand work between runtime instances or ports, use platform-specific capabilities on another authorized node, and return structured status, logs, artifacts, and follow-up work to the same project.
+
+```text
+Local Slai Runtime
+→ built-in foreground / background agent coordination
+→ cross-port and cross-platform runtime handoff
+→ authorized Windows, Linux, macOS, or Android nodes
+→ controlled device and server operations
+→ verified results returned to the originating task
+```
+
+This supports practical cross-platform work without treating every connected machine as an unrestricted remote shell. For example, an authorized Android device can expose approved device-control capabilities, while a registered Linux server can expose a controlled execution node for builds, tests, Docker work, downloads, artifact handling, or maintenance. Each node exposes only the capabilities it has been authorized to provide; operating-system access control and user authorization remain the final boundary.
+
+### Long-running project continuity and efficient context
+
+Slai is designed for work that is larger than one response or one device session. A task can remain active through tool runs, test failures, CI waits, review cycles, checkpoints, and recoverable restarts; a single work thread may take hours or days, while a project can be maintained across days or months. The runtime keeps task state, evidence, artifacts, and follow-up work associated with the project so an authorized user can inspect or continue the same work from another connected device.
+
+Long-running work does not require every later model call to carry a growing transcript of raw terminal output, browser payloads, and tool logs. The runtime keeps a stable working context and retains task-level anchors and evidence references; when details are needed, the model can retrieve the relevant artifact or state through tools. In observed continuous, non-cold-start runs, stable input structure and provider prompt-cache reuse can produce an input Token cache-hit rate of roughly **95–99%**. This is a request-efficiency observation—not a task-accuracy or success-rate claim—and varies with the provider, model, request shape, and task.
+
 ### Cloud control plane
 
 A server deployment can remain online as a control plane. It keeps sessions, tasks, registered nodes, and returned results separated by account scope, and routes work to the appropriate authorized node.
