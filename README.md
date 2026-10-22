@@ -31,6 +31,14 @@ The developer's role is to provide direction, goal descriptions, and feedback fr
 
 This is an ongoing experiment in human–AI collaboration: lowering the knowledge barrier that keeps many people from participating in real software engineering, while using AI to carry ideas through to implementations, tests, contributions, and results.
 
+## Model training and capability research
+
+Today, Slai Agent Runtime relies primarily on cloud-model APIs for its engineering work. [Slai Model Lab](https://github.com/huong8373tt-beep/slai.life-model-lab-docs) is a separate private training, model-runtime, and experimentation system that explores the longer-term path toward personal model operation and training as compute becomes more accessible.
+
+Runtime work can produce structured task experience. Model Lab studies how selected private experience can be reviewed, trained, evaluated, and—when it passes regression checks—made available to later Runtime work. Its recorded experiments span text, speech, image, video, multimodal, and homegrown models.
+
+The Runtime does not depend on self-trained models, and not every interaction is automatically used for training.
+
 ## Local runtime and cloud control plane
 
 ### Local runtime
