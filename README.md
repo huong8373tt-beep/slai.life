@@ -41,59 +41,27 @@ This is an effort to build the training, recovery, and evaluation foundation ahe
 
 ## Local runtime and cloud control plane
 
-### Local runtime
-
 Slai can run on, or connect to:
 
 ```text
 Windows · Linux · macOS · Android
 ```
 
-Local deployments support day-to-day interaction, source investigation, file and browser work, desktop or device operations, builds, tests, evaluations, and open-source collaboration.
+Local deployments support conversation, research, file and browser work, authorized desktop or device operations, builds, tests, evaluations, and open-source collaboration.
 
-### Native multi-agent and authorized-node coordination
+### Multi-agent and authorized-device coordination
 
-The local runtime includes native coordination between its foreground and background agent roles. A task is not limited to one chat process or one machine: it can hand work between runtime instances or ports, use platform-specific capabilities on another authorized node, and return structured status, logs, artifacts, and follow-up work to the same project.
+The runtime has native foreground/background agent coordination. A task can move between runtime instances, ports, and authorized cross-platform nodes, then return its results and follow-up work to the same project. Authorized Android devices can provide device operations; registered Linux servers can provide controlled builds, tests, downloads, and maintenance work. Nodes expose only user-authorized capabilities, with operating-system permissions remaining the final boundary.
 
-```text
-Local Slai Runtime
-→ built-in foreground / background agent coordination
-→ cross-port and cross-platform runtime handoff
-→ authorized Windows, Linux, macOS, or Android nodes
-→ controlled device and server operations
-→ verified results returned to the originating task
-```
+### Long-running work
 
-This supports practical cross-platform work without treating every connected machine as an unrestricted remote shell. For example, an authorized Android device can expose approved device-control capabilities, while a registered Linux server can expose a controlled execution node for builds, tests, Docker work, downloads, artifact handling, or maintenance. Each node exposes only the capabilities it has been authorized to provide; operating-system access control and user authorization remain the final boundary.
+A work thread can continue through tool runs, test failures, CI waits, reviews, checkpoints, and recoverable restarts for hours or days; a project can be maintained across days or months. Task state, evidence, artifacts, and follow-up work remain associated with the project so authorized users can inspect or continue it from another connected device.
 
-### Long-running project continuity and efficient context
-
-Slai is designed for work that is larger than one response or one device session. A task can remain active through tool runs, test failures, CI waits, review cycles, checkpoints, and recoverable restarts; a single work thread may take hours or days, while a project can be maintained across days or months. The runtime keeps task state, evidence, artifacts, and follow-up work associated with the project so an authorized user can inspect or continue the same work from another connected device.
-
-Long-running work does not require every later model call to carry a growing transcript of raw terminal output, browser payloads, and tool logs. The runtime keeps a stable working context and retains task-level anchors and evidence references; when details are needed, the model can retrieve the relevant artifact or state through tools. In observed continuous, non-cold-start runs, stable input structure and provider prompt-cache reuse can produce an input Token cache-hit rate of roughly **95–99%**. This is a request-efficiency observation—not a task-accuracy or success-rate claim—and varies with the provider, model, request shape, and task.
+In observed continuous, non-cold-start work, stable requests and provider prompt-cache reuse can yield roughly **95–99%** input-token cache hits. This is an efficiency observation, not an accuracy claim, and varies by provider, model, and task.
 
 ### Cloud control plane
 
-A server deployment can remain online as a control plane. It keeps sessions, tasks, registered nodes, and returned results separated by account scope, and routes work to the appropriate authorized node.
-
-For example, a task can start on Windows, use an authorized Linux node for a Docker evaluation, CGO build, large test suite, artifact transfer, or server-maintenance task, then be inspected or continued from Windows, macOS, or Android.
-
-This lets long-running work continue without depending entirely on one foreground device. Connected nodes expose only authorized capabilities; final operating-system permissions still depend on each node's deployment and access configuration.
-
-## Engineering work that takes time
-
-Some work takes more than one answer, device session, test run, or review cycle. Typical examples include:
-
-```text
-Repository investigation and bounded fixes
-Repeated builds, tests, and debugging
-Waiting for CI, bot, or maintainer feedback
-Remote execution and artifact verification
-Benchmark runs
-Follow-up commits and maintenance
-```
-
-With account-owner direction and authorization, Slai can carry this work through investigation, implementation, validation, Pull Request submission, review follow-up, and record keeping. A queued task, a running job, and a verified result are not treated as the same thing.
+An optional server deployment can stay online to coordinate an account's authorized nodes and route platform-specific work without depending on one foreground device. With account-owner direction and authorization, Slai can carry work from investigation and implementation through validation, Pull Request follow-up, and record keeping. A queued task, a running job, and a verified result are treated as different states.
 
 ## Public upstream contributions
 
