@@ -76,14 +76,14 @@ With account-owner direction and authorization, Slai can carry this work through
 
 ## Public upstream contributions
 
-Public GitHub records currently show **14 merged Pull Requests** authored by this account:
+Public GitHub records currently show **20 merged Pull Requests** authored by this account:
 
 | Category | Count |
 | --- | ---: |
-| Upstream code, test, and evaluator contributions | 10 |
+| Upstream code, test, evaluator, and documentation contributions | 16 |
 | SWE-bench-Live submission packages | 4 |
 
-The merged engineering contributions cover error handling, type safety, evaluator correctness, Windows-compatible paths, test isolation, and compiled-kernel correctness. Links and scope notes are in [UPSTREAM_CONTRIBUTIONS.md](UPSTREAM_CONTRIBUTIONS.md).
+The merged engineering contributions cover error handling, type safety, evaluator correctness, Windows-compatible paths, test isolation, report retry behavior, cloud-infrastructure configuration, and compiled-kernel correctness. Links and scope notes are in [UPSTREAM_CONTRIBUTIONS.md](UPSTREAM_CONTRIBUTIONS.md).
 
 ### Selected merged contributions
 
@@ -91,9 +91,13 @@ The merged engineering contributions cover error handling, type safety, evaluato
 | --- | --- | --- |
 | Microsoft PyRIT | [#3277](https://github.com/microsoft/PyRIT/pull/3277), [#3281](https://github.com/microsoft/PyRIT/pull/3281), [#3333](https://github.com/microsoft/PyRIT/pull/3333), [#3351](https://github.com/microsoft/PyRIT/pull/3351) | Adds lifecycle context to scenario, service, runtime, and resource-cleanup errors. |
 | Microsoft PyRIT | [#3383](https://github.com/microsoft/PyRIT/pull/3383), [#3411](https://github.com/microsoft/PyRIT/pull/3411) | Improves `Self` typing and subclass regression coverage for factories. |
+| Microsoft PyRIT | [#3441](https://github.com/microsoft/PyRIT/pull/3441) | Makes attack-outcome logging exhaustive and surfaces unrecognized persisted values in regression coverage. |
 | Microsoft SWE-bench-Live | [#54](https://github.com/microsoft/SWE-bench-Live/pull/54) | Corrects evaluator handling of pytest `XFAIL` outcomes. |
 | Microsoft WinGet CLI | [#6582](https://github.com/microsoft/winget-cli/pull/6582) | Fixes export output paths containing Unicode / emoji characters. |
 | Tencent TeamAI CLI | [#1264](https://github.com/Tencent/teamai-cli/pull/1264) | Prevents hook-reconcile tests from modifying a contributor's real Git checkout. |
+| Tencent TeamAI CLI | [#1291](https://github.com/Tencent/teamai-cli/pull/1291) | Retries report pushes when a prior attempt already committed the report locally. |
+| Tencent BrowserSkill | [#473](https://github.com/Tencent/BrowserSkill/pull/473) | Documents the correct windowless Windows GUI-host startup boundary for a foreground daemon. |
+| Google Stellar Engine | [#338](https://github.com/google/stellar-engine/pull/338), [#339](https://github.com/google/stellar-engine/pull/339), [#340](https://github.com/google/stellar-engine/pull/340) | Fixes Workbench notebook owners, GitLab Cloud SQL private-network wiring, and conditional VPC Service Controls log-sink ingress. |
 | Flash Linear Attention | [#1353](https://github.com/fla-org/flash-linear-attention/pull/1353) | Preserves `softplus` and `softplus2` names in compiled Triton kernels. |
 
 ## Windows SWE-bench-Live work

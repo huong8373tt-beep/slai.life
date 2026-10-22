@@ -14,9 +14,15 @@ The account owner directs and authorizes contributions. Slai Agent Runtime assis
 | Microsoft PyRIT | [#3351](https://github.com/microsoft/PyRIT/pull/3351) | Add Copilot cleanup phase context. |
 | Microsoft PyRIT | [#3383](https://github.com/microsoft/PyRIT/pull/3383) | Type attack-technique seed factories with `Self`. |
 | Microsoft PyRIT | [#3411](https://github.com/microsoft/PyRIT/pull/3411) | Type the adversarial-placeholder factory with `Self`. |
+| Microsoft PyRIT | [#3441](https://github.com/microsoft/PyRIT/pull/3441) | Make attack-outcome logging exhaustive and surface unrecognized persisted values in regression coverage. |
 | Microsoft SWE-bench-Live | [#54](https://github.com/microsoft/SWE-bench-Live/pull/54) | Fix pytest `XFAIL` handling in the evaluator. |
 | Microsoft WinGet CLI | [#6582](https://github.com/microsoft/winget-cli/pull/6582) | Fix export output paths containing Unicode characters. |
 | Tencent TeamAI CLI | [#1264](https://github.com/Tencent/teamai-cli/pull/1264) | Isolate the hook-reconcile test fixture from the contributor checkout. |
+| Tencent TeamAI CLI | [#1291](https://github.com/Tencent/teamai-cli/pull/1291) | Retry report pushes when a prior attempt already committed the report locally. |
+| Tencent BrowserSkill | [#473](https://github.com/Tencent/BrowserSkill/pull/473) | Clarify windowless Windows GUI-host startup for a foreground daemon. |
+| Google Stellar Engine | [#338](https://github.com/google/stellar-engine/pull/338) | Apply configured Workbench notebook owners. |
+| Google Stellar Engine | [#339](https://github.com/google/stellar-engine/pull/339) | Configure GitLab Cloud SQL private-network wiring. |
+| Google Stellar Engine | [#340](https://github.com/google/stellar-engine/pull/340) | Omit VPC Service Controls log-sink ingress when logging is disabled. |
 | Flash Linear Attention | [#1353](https://github.com/fla-org/flash-linear-attention/pull/1353) | Preserve `softplus` names in compiled Triton kernels. |
 
 ## Merged benchmark submission packages
