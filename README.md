@@ -33,11 +33,11 @@ This is an ongoing experiment in human–AI collaboration: lowering the knowledg
 
 ## Model training and capability research
 
-Today, Slai Agent Runtime relies primarily on cloud-model APIs for its engineering work. [Slai Model Lab](https://github.com/huong8373tt-beep/slai.life-model-lab-docs) is a separate private training, model-runtime, and experimentation system that explores the longer-term path toward personal model operation and training as compute becomes more accessible.
+At today's personal-compute budget, Slai Agent Runtime relies primarily on cloud-model APIs for its engineering work. [Slai Model Lab](https://github.com/huong8373tt-beep/slai.life-model-lab-docs) is a separate private training, model-runtime, and experimentation system for the longer-term path: as personal compute, hardware efficiency, and accessible models improve, individuals should be able to train, operate, and evaluate more of their own models.
 
-Runtime work can produce structured task experience. Model Lab studies how selected private experience can be reviewed, trained, evaluated, and—when it passes regression checks—made available to later Runtime work. Its recorded experiments span text, speech, image, video, multimodal, and homegrown models.
+The two systems are complementary. Runtime work can produce and organize structured task experience; Model Lab studies how selected private experience can be reviewed, used for training, evaluated, and—when it passes regression checks—made available to later Runtime work. Its recorded experiments span text, speech, image, video, multimodal, and homegrown models.
 
-The Runtime does not depend on self-trained models, and not every interaction is automatically used for training.
+This is an effort to build the training, recovery, and evaluation foundation ahead of that future. The Runtime does not depend on self-trained models, and not every interaction is automatically used for training.
 
 ## Local runtime and cloud control plane
 
