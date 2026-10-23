@@ -1,17 +1,37 @@
 # Slai Agent Runtime
 
-Slai Agent Runtime is a private, cross-platform runtime designed for work that can continue across devices and over time.
+Slai is a private, cross-platform Agent Runtime for work that needs to continue
+beyond a single conversation, device, or session.
 
-Slai has two deployment forms:
+It has two deployment forms:
 
-- a **personal long-running Agent Runtime**, deployable on Windows, Linux, macOS, and Android; and
-- a **cloud control-plane Runtime**, where one continuously running process serves multiple accounts with account isolation. Within an account owner's authorization, it provides the same core Runtime capabilities: it can understand and advance work, use tools, and work with that account's authorized computers, Android devices, and controlled server nodes.
+- a **personal long-running Agent Runtime**, deployable on Windows, Linux,
+  macOS, and Android. It can work with the files, applications, browsers,
+  services, and devices that its owner authorizes; and
 
-A task can start on one device, use another authorized node for platform-specific work, and return its logs, artifacts, and follow-up work to the same account.
+- an **account-isolated multi-tenant control-plane Runtime**, where one
+  continuously running server process serves multiple accounts while keeping
+  each account's work and authorized resources separate. Within an account
+  owner's authorization, it can work with that account's computers, Android
+  devices, controlled server nodes, and other authorized resources.
 
-Slai is not tied to any single model provider. Deployments can use mainstream standard-compatible model APIs, while task execution, tool use, device coordination, and result checking remain in the Runtime.
+Both forms provide the same core Slai capabilities: understanding goals,
+investigating, planning, using tools, carrying work forward, checking results,
+and operating across authorized platforms and devices. Actions on a particular
+machine or device are performed through the relevant authorized node and remain
+subject to that system's permissions.
 
-This repository collects public records of Slai's upstream contributions, benchmark runs, and engineering work. It does not include the core runtime source, API keys, account tokens, private prompts, browser profiles, dependency caches, VM images, or full runtime dumps.
+A task can start on one device, use another authorized node for
+platform-specific work, and return its logs, artifacts, and follow-up work to
+the same account.
+
+Slai is not tied to any single model provider. Deployments can use mainstream
+standard-compatible model APIs, while task execution, tool use, device
+coordination, and result checking remain in the Runtime. This repository
+collects public records of Slai's upstream contributions, benchmark runs, and
+engineering work. It does not include the core runtime source, API keys,
+account tokens, private prompts, browser profiles, dependency caches, VM images,
+or full runtime dumps.
 
 ## Why this exists
 
