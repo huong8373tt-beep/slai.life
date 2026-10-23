@@ -1,15 +1,15 @@
 # Slai Agent Runtime
 
-Slai Agent Runtime is a private, cross-platform runtime for engineering work that may span multiple devices, test runs, or review cycles.
+Slai Agent Runtime is a private, cross-platform runtime designed for work that can continue across devices and over time.
 
-It can be used in two ways:
+Slai has two deployment forms:
 
-- a **local runtime** for personal computers and authorized devices; and
-- a **cloud control plane** that stays online and coordinates the authorized nodes of an account.
+- a **personal long-running Agent Runtime**, deployable on Windows, Linux, macOS, and Android; and
+- a **cloud control-plane Runtime**, where one continuously running process serves multiple accounts with account isolation. Within an account owner's authorization, it provides the same core Runtime capabilities: it can understand and advance work, use tools, and work with that account's authorized computers, Android devices, and controlled server nodes.
 
-Slai can work across Windows, Linux, macOS, and Android. A task can start on one device, use another authorized node for platform-specific work, and return its logs, artifacts, and follow-up work to the same account.
+A task can start on one device, use another authorized node for platform-specific work, and return its logs, artifacts, and follow-up work to the same account.
 
-Slai is not tied to one model provider. Deployments can use mainstream standard-compatible model APIs while task execution, tools, device coordination, and result checking remain in the runtime.
+Slai is not tied to any single model provider. Deployments can use mainstream standard-compatible model APIs, while task execution, tool use, device coordination, and result checking remain in the Runtime.
 
 This repository collects public records of Slai's upstream contributions, benchmark runs, and engineering work. It does not include the core runtime source, API keys, account tokens, private prompts, browser profiles, dependency caches, VM images, or full runtime dumps.
 
