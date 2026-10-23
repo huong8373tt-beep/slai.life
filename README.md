@@ -2,9 +2,12 @@
 
 Slai Agent Runtime is a private, cross-platform runtime for engineering work that may span multiple devices, test runs, or review cycles.
 
-It can run locally on personal computers and authorized devices, and it can also use an optional cloud coordination service for work that needs to continue across connected devices or services.
+It can be used in two ways:
 
-Slai works across Windows, Linux, macOS, and Android. The same project can move between authorized devices while keeping its results and follow-up work together.
+- a **local runtime** for personal computers and authorized devices; and
+- a **cloud control plane** that stays online and coordinates the authorized nodes of an account.
+
+Slai can work across Windows, Linux, macOS, and Android. A task can start on one device, use another authorized node for platform-specific work, and return its logs, artifacts, and follow-up work to the same account.
 
 Slai is not tied to one model provider. Deployments can use mainstream standard-compatible model APIs while task execution, tools, device coordination, and result checking remain in the runtime.
 
@@ -36,17 +39,29 @@ The two systems are complementary. Runtime work can produce and organize structu
 
 This is an effort to build the training, recovery, and evaluation foundation ahead of that future. The Runtime does not depend on self-trained models, and not every interaction is automatically used for training.
 
-## Local runtime and cloud coordination
+## Local runtime and cloud control plane
+
+Slai can run on, or connect to:
 
 ```text
 Windows · Linux · macOS · Android
 ```
 
-Local deployments support conversation, research, file and browser work, authorized device operations, builds, tests, and open-source collaboration.
+Local deployments support conversation, research, file and browser work, authorized desktop or device operations, builds, tests, evaluations, and open-source collaboration.
 
-Slai supports foreground/background agent collaboration and can use authorized devices or servers for platform-specific work. An optional cloud coordination service can keep authorized nodes and longer-running work connected when one foreground device is not enough.
+### Multi-agent and authorized-device coordination
 
-A project can remain connected through tool runs, test failures, CI waits, reviews, and recoverable restarts—over hours or days, and across longer maintenance cycles. In observed continuous, non-cold-start work, stable requests and provider prompt-cache reuse can yield roughly **95–99%** input-token cache hits. This is an efficiency observation, not an accuracy claim.
+The runtime has native foreground/background agent coordination. A task can move between runtime instances, ports, and authorized cross-platform nodes, then return its results and follow-up work to the same project. Authorized Android devices can provide device operations; registered Linux servers can provide controlled builds, tests, downloads, and maintenance work. Nodes expose only user-authorized capabilities, with operating-system permissions remaining the final boundary.
+
+### Long-running work
+
+A work thread can continue through tool runs, test failures, CI waits, reviews, checkpoints, and recoverable restarts for hours or days; a project can be maintained across days or months. Task state, evidence, artifacts, and follow-up work remain associated with the project so authorized users can inspect or continue it from another connected device.
+
+In observed continuous, non-cold-start work, stable requests and provider prompt-cache reuse can yield roughly **95–99%** input-token cache hits. This is an efficiency observation, not an accuracy claim, and varies by provider, model, and task.
+
+### Cloud control plane
+
+An optional server deployment can stay online to coordinate an account's authorized nodes and route platform-specific work without depending on one foreground device. With account-owner direction and authorization, Slai can carry work from investigation and implementation through validation, Pull Request follow-up, and record keeping. A queued task, a running job, and a verified result are treated as different states.
 
 ## Public upstream contributions
 
