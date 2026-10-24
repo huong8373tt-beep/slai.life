@@ -24,6 +24,17 @@ The account owner directs and authorizes contributions. Slai Agent Runtime assis
 | Google Stellar Engine | [#339](https://github.com/google/stellar-engine/pull/339) | Configure GitLab Cloud SQL private-network wiring. |
 | Google Stellar Engine | [#340](https://github.com/google/stellar-engine/pull/340) | Omit VPC Service Controls log-sink ingress when logging is disabled. |
 | Flash Linear Attention | [#1353](https://github.com/fla-org/flash-linear-attention/pull/1353) | Preserve `softplus` names in compiled Triton kernels. |
+| Microsoft PyRIT | [#3456](https://github.com/microsoft/PyRIT/pull/3456) | Make CLI result-view dispatch exhaustive. |
+| Microsoft PyRIT | [#3472](https://github.com/microsoft/PyRIT/pull/3472) | Make analytics value-kind labels exhaustive. |
+| Tencent WeKnora | [#4595](https://github.com/Tencent/WeKnora/pull/4595) | Reclaim superseded Lite reparse chunks after a successful replacement parse. |
+| Tencent WeKnora | [#4605](https://github.com/Tencent/WeKnora/pull/4605) | Support similar-page lookup on SQLite. |
+| Tencent WeKnora | [#4645](https://github.com/Tencent/WeKnora/pull/4645) | Keep the sign-in form visible on phones. |
+| Tencent WeKnora | [#4655](https://github.com/Tencent/WeKnora/pull/4655) | Clarify PostgreSQL vector-store requirements. |
+| Alibaba Skill-Up | [#332](https://github.com/alibaba/skill-up/pull/332) | Record recovered agent-judge calls in reports without exposing provider error text. |
+| HashiCorp Terraform AzureRM | [#33698](https://github.com/hashicorp/terraform-provider-azurerm/pull/33698) | Remove all deleted Logic App Standard app settings in one apply. |
+| Soneso Stellar Agent Wallet | [#446](https://github.com/Soneso/stellar-agent-wallet/pull/446) | Validate complete `ContextRule` data before deriving counts. |
+| Soneso Stellar Agent Wallet | [#449](https://github.com/Soneso/stellar-agent-wallet/pull/449) | Count envelope fees in minimum-reserve checks. |
+| Toolism | [#40](https://github.com/rakeshnitb23/toolism/pull/40) | Add the opt-in `SL103` rule for removing JSON Schema title annotations. |
 
 ## Merged benchmark submission packages
 
